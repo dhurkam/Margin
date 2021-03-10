@@ -54,7 +54,7 @@ class Deposit(Action):
                                      </br>Client has decided to deposit the share to pay for the Margin Shortfall. Please Deposit the shares in Margin account.
 
                             <p>
-                            Your Customer's Margin Shortfall amount is {0}{1}<br></br>
+                             Customer's Margin Shortfall amount is {0}{1}<br></br>
 
 
                             </p>
@@ -151,7 +151,7 @@ class ActionIcici(Action):
      def run(self, dispatcher: CollectingDispatcher,
          tracker: Tracker,
          domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-         os.system("start \"\" https://secure.icicidirect.com/customer/login")
+         os.system("start \"\" https://www.icicibank.com/Personal-Banking/insta-banking/internet-banking/index.page")
          folio=tracker.get_slot('Port_Num')
          connection = mysql.connector.connect(host='localhost',database='margin',user='root',password='1234')
          cursor = connection.cursor()
