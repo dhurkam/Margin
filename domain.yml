@@ -1,0 +1,94 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- citi
+- goodbye
+- pay
+- Portfolio_number
+- depo_share
+- sbi
+- sell_share
+- icici
+- angel_broking
+- icici_direct
+- zerodha
+- kotak_sec
+- upstox
+entities:
+- Port_Num
+slots:
+  Port_Num:
+    type: unfeaturized
+responses:
+  utter_depo_share:
+  - text: Mail sent to Broker to Deposit Shares.
+  utter_end:
+  - buttons:
+    - payload: /goodbye
+      title: Exit
+    - payload: /greet
+      title: Do you want to continue
+    text: 'Please select to proceed further: '
+  utter_goodbye:
+  - text: Bye
+  utter_greet:
+  - text: "Welcome to Trojan, An intelligent Bot to manage Margin calls.\n Please\
+      \ enter 6 digit Portfolio number for which you want to pay the Margin Shortfall: "
+  utter_pay:
+  - buttons:
+    - payload: /sbi
+      title: State Bank of India
+    - payload: /icici
+      title: ICICI Bank
+    - payload: /citi
+      title: CITI Bank
+    - payload: /greet
+      title: Back to main menu
+    text: 'Select any Option to Proceed further: '
+  utter_payoption:
+  - buttons:
+    - payload: /pay
+      title: Pay Now
+    - payload: /sell_share
+      title: Sell Share
+    - payload: /depo_share
+      title: Deposit Share
+    - payload: /greet
+      title: Back to main menu
+    text: 'Select any Option to Proceed further: '
+  utter_sell_share:
+  - buttons:
+    - payload: /angel_broking
+      title: Angel Broking"
+    - payload: /icici_direct
+      title: ICICI Direct"
+    - payload: /zerodha
+      title: Zerodha
+    - payload: /kotak_sec
+      title: Kotak Securities
+    - payload: /upstox
+      title: Upstox
+    - payload: /greet
+      title: Back to main menu
+    text: 'Select any Option to Proceed further: '
+actions:
+- action_angel
+- action_citi
+- action_deposit
+- action_greet
+- action_hello_world
+- action_icici
+- action_icici_direct
+- action_kotak_sec
+- action_sbi
+- action_upstox
+- action_zerodha
+- utter_depo_share
+- utter_end
+- utter_goodbye
+- utter_greet
+- utter_pay
+- utter_payoption
+- utter_sell_share

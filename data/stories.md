@@ -1,0 +1,69 @@
+## path
+* greet
+  - utter_greet
+* Portfolio_number
+  - action_greet
+  - action_hello_world
+* pay
+  - utter_pay
+* sell_share
+  - utter_sell_share
+* depo_share
+  - action_deposit
+  - utter_depo_share
+  - utter_end
+* sbi
+  - action_sbi
+  - utter_end
+* icici
+  - action_icici
+  - utter_end
+* citi
+  - action_citi
+  - utter_end
+* angel_broking
+  - action_angel
+  - utter_end
+* icici_direct
+  - action_icici_direct
+  - utter_end
+* zerodha
+  - action_zerodha
+  - utter_end
+* kotak_sec
+  - action_kotak_sec
+  - utter_end
+* upstox
+  - action_upstox
+  - utter_end
+* goodbye
+  - utter_goodbye
+
+## interactive_story_1
+* greet
+    - utter_greet
+* Portfolio_number{"Port_Num": "100028"}
+    - slot{"Port_Num": "100028"}
+    - action_greet
+    - action_hello_world
+* depo_share
+    - action_deposit
+    - utter_depo_share
+    - utter_end
+* goodbye
+    - utter_goodbye
+
+## interactive_story_1
+* greet
+    - utter_greet
+* Portfolio_number{"Port_Num": "100028"}
+    - slot{"Port_Num": "100028"}
+    - action_greet
+    - action_hello_world
+* pay
+    - utter_pay
+* citi
+    - action_citi
+    - utter_end
+* goodbye
+    - utter_goodbye
